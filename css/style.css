@@ -340,7 +340,7 @@ body {
       .popup__grid {
         display: block; } }
   .popup__left {
-    background-image: url(../../img/img-5.jpg);
+    background-image: url(../img/img-5.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
@@ -422,7 +422,7 @@ body {
       .last-tour__grid {
         display: block; } }
   .last-tour__left {
-    background-image: url(../../img/img-2.jpg);
+    background-image: url(../img/img-2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -471,7 +471,7 @@ body {
 .story {
   height: 70vh;
   width: 100%;
-  background-image: linear-gradient(to right top, #333, #333 35%, transparent), url(../../img/img-4.jpg);
+  background-image: linear-gradient(to right top, #333, #333 35%, transparent), url(../img/img-4.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -485,7 +485,7 @@ body {
 
 .story-page-header__hero {
   width: 100%;
-  background-image: linear-gradient(to top, #333, transparent), url(../../img/img-4.jpg);
+  background-image: linear-gradient(to top, #333, transparent), url(../img/img-4.jpg);
   height: 65vh;
   background-size: cover;
   background-position: center; }
@@ -497,7 +497,7 @@ body {
   margin-bottom: 2rem; }
 
 .interview__header {
-  background-image: linear-gradient(to top, #333, transparent), url(../../img/img-3.jpg);
+  background-image: linear-gradient(to top, #333, transparent), url(../img/img-3.jpg);
   height: 65vh;
   background-size: cover;
   background-position: center; }
@@ -664,7 +664,7 @@ body {
     display: inline-block; }
 
 .footer {
-  background-image: linear-gradient(to right top, #333, #333 35%, transparent), url(../../img/img-1.jpg);
+  background-image: linear-gradient(to right top, #333, #333 35%, transparent), url(../img/img-1.jpg);
   background-size: cover;
   background-position: center; }
   .footer__grid {
