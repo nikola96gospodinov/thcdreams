@@ -1,0 +1,102 @@
+.btn{
+	&,
+	&:link,
+	&:visited {
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 1rem 2.5rem;
+		display: inline-block;
+		border-radius: 10rem;
+		transition: all .2s;
+		position: relative;
+
+		@include respond(big-desktop){
+			font-size: 1.2rem;
+		}
+
+		@include respond(phone) {
+			font-size: .9rem;
+			padding: 1rem 1.8rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: .8rem;
+			padding: 1rem 1.2rem;
+		}
+
+		// change for the button element
+
+		cursor: pointer;
+	}
+
+	&:hover {
+		//transform: translateY(-3px);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+		
+		&::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity:0;
+		}
+	}
+
+	&:active,
+	&:focus {
+		transform: translateY(-0.1rem);
+		color: rgba(0, 0, 0, .2);
+	}
+
+	&--white {
+		background-color: $color-white;
+		color: $color-grey-dark;
+		border: 2px solid $color-grey-dark;
+
+		&::after {
+			background-color: $color-white;
+		}
+	}
+
+	&--blue {
+		background-color: $color-primary-dark;
+		color: $color-white;
+
+		@include respond(tab-land){
+			font-size: .9rem;
+		}
+
+		&::after {
+			background-color: $color-primary-dark;
+		}
+	}
+
+	&--footer {
+		background-color: #fff;
+		text-decoration: none;
+		color: $color-grey-dark;
+		padding: .5rem;
+		margin-top: .5rem;
+		display: inline-block;
+		border: 2px solid $color-grey-dark;
+		text-transform: uppercase;
+		width: 100%;
+		text-align: center;
+		border-radius: 50px;
+	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 100px;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index: -1;
+		transition: all .4s;
+	}
+
+	&--animated {
+		animation: moveInButton .0.5s ease-in .75s;
+		animation-fill-mode: backwards;
+	}
+}

@@ -1,0 +1,36 @@
+.interview {
+
+    &__header {
+
+        & h1 {
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            top: 55%;
+        }
+
+        & h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            text-align: center;
+            position: relative;
+            top: 52%;
+
+            @include respond(phone){
+                margin: 0 .5rem;
+            }
+        }
+
+    }
+
+    &__text {
+        
+        & p {
+            font-size: 1.3rem;
+            color: $color-grey-dark-3;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

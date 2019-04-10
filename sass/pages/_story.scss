@@ -1,0 +1,29 @@
+.story-page-header {
+    
+    &__hero {
+        width: 100%;
+        background-image: linear-gradient(to top, $color-grey-dark-3, transparent), url(../../img/img-4.jpg);
+        height: 65vh;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.bio {
+    & p {
+        font-size: 1.3rem;
+        color: $color-grey-dark-3;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.interview {
+    &__header {
+        //width: 100%;
+        background-image: linear-gradient(to top, $color-grey-dark-3, transparent), url(../../img/img-3.jpg);
+        height: 65vh;
+        background-size: cover;
+        background-position: center;
+    }
+}

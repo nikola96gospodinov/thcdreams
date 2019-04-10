@@ -1,0 +1,18 @@
+.story {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, $color-grey-dark-3, $color-grey-dark-3 35%, transparent), url(../../img/img-4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0% 100%);
+}
+
+.last-tour {
+    &__design {
+        width: 80%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}

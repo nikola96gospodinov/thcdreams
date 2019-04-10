@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+
+	@include respond(tab-land) {
+
+	}
+
+	@include respond(tab-port) {
+        
+	}
+
+	@include respond(big-desktop) {
+		
+	}
+}
+
+body {
+	/* The following line makes sure that padding and margin is not added */
+	box-sizing: border-box;
+	padding: 0;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
+}
+
+div{
+	width:75%;
+	/* That will put everything in the div class in the
+	middle */
+	margin: 0 auto;
+	overflow: hidden;
+}

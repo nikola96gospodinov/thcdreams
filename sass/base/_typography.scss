@@ -1,0 +1,154 @@
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	/*font-size: 16px;*/
+	line-height: 1.7;
+	color: #333;
+}
+
+.paragraph {
+	font-size: 1rem;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
+
+.heading-primary {
+	
+	&--sub {
+		background: linear-gradient(to right, rgba(255, 255, 255, .85), rgba(255, 255, 255, .6));
+		color: #444;
+		padding: .5rem 1rem;
+		border: 1px #444 solid;
+		border-radius: 20px;
+		font-weight: 400;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+
+	&--main {
+		background: linear-gradient(to right, rgba(255, 255, 255, .85), rgba(255, 255, 255, .6));
+		color: #444;
+		padding: .5rem 1rem;
+		border: 1px #444 solid;
+		border-radius: 20px;
+		font-weight: 400;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+}
+
+.heading-main {
+
+	&--popup {
+		margin-top: 4rem;
+		margin-bottom: 1.5rem;
+		font-size: 2rem;
+		color: $color-primary-dark;
+
+		@include respond(big-desktop) {
+			margin-top: 8rem;
+			font-size: 2.8rem;
+		}
+
+		@include respond(tab-land) {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+		}
+
+		@include respond(phone) {
+			font-size: 1.2rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: 1rem;
+		}
+	}
+	
+	&--video {
+		font-size: 3.5rem;
+		color: $color-primary-dark;
+		margin-top: 2.5rem;
+
+		@include respond(phone) {
+			font-size: 2.4rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: 1.8rem;
+		}
+	}
+
+	&--story {
+		font-size: 3rem;
+		color: #fff;
+
+		@include respond(tab-port) {
+			font-size: 2.6rem;
+		}
+
+		@include respond(phone) {
+			font-size: 2.2rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: 1.8rem;
+		}
+	}
+
+	&--last-tour {
+		font-size: 2.5rem;
+		color: $color-grey-dark-3;
+		text-align: left;
+
+		@include respond(phone) {
+			font-size: 2.4rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: 1.8rem;
+		}
+	}
+
+	&--footer {
+		font-size: 1.6rem;
+		color: $color-grey-light-1;
+	}
+}
+
+.heading-tertiary {
+
+	&--popup {
+		font-size: 1.2rem;
+		margin-right: 6rem;
+		
+		@include respond(big-desktop) {
+			font-size: 1.6rem;
+		}
+
+		@include respond(tab-land) {
+			font-size: 1rem;
+		}
+
+		@include respond(small-phone) {
+			margin-right: 2rem;
+			font-size: .9rem;
+		}
+	}
+
+	&--video {
+		font-size: 1.4rem;
+		margin-top: -0.8rem;
+		text-transform: uppercase;
+		color: $color-grey-dark;
+
+		@include respond(phone) {
+			font-size: .9rem;
+		}
+
+		@include respond(small-phone) {
+			font-size: .7rem;
+		}
+	}
+}

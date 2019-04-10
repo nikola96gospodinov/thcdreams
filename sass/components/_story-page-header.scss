@@ -1,0 +1,21 @@
+.story-page-header {
+
+    &__hero {
+
+        & h1 {
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            top: 55%;
+        }
+
+        & h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            text-align: center;
+            position: relative;
+            top: 52%;
+        }
+    }
+}

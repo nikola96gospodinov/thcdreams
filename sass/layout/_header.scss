@@ -1,0 +1,60 @@
+.header {
+    height: 100vh;
+	background-image: linear-gradient(
+		to right bottom, rgba(#fff, .75) 0%, transparent 45%, transparent), 
+		url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    &__logo-box{
+		position: absolute;
+		top:2.5rem;
+		left:1.5rem;
+
+		@include respond(tab-land) {
+			top: 1.75rem;
+			left: 1rem;
+		}
+
+		@include respond(tab-port) {
+			top: 1rem;
+			left: .5rem;
+		}
+
+		@include respond(phone) {
+			top: 1rem;
+			left: -.5rem;
+		}
+	}
+
+	&__logo {
+		height: 12rem;
+
+		@include respond(big-desktop) {
+			height: 15rem;
+		}
+
+		@include respond(tab-land) {
+			height: 10rem;
+		}
+
+		@include respond(tab-port) {
+			height: 9rem;
+		}
+
+		@include respond(phone) {
+			height: 8rem;
+		}
+	}
+    
+    &__text-box {
+		position: absolute;
+		top:72%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}

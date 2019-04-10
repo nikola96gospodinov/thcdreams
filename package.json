@@ -1,0 +1,14 @@
+{
+  "name": "thc-dreams",
+  "version": "1.0.0",
+  "description": "Website for THC Dreams",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Nikola Gospodinov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

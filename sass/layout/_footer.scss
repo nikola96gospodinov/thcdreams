@@ -1,0 +1,83 @@
+.footer {
+    background-image: linear-gradient(to right top, $color-grey-dark-3, $color-grey-dark-3 35%, transparent), url(../../img/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 1rem;
+        align-items: start;
+        border-top: .8rem solid #fff;
+        border-radius: .4rem;
+        padding-bottom: 2rem;
+        align-content: start;
+        width:80%;
+
+        @include respond(phone) {
+            display: block;
+        }
+
+        @include respond(tab-port) {
+            display: block;
+        }
+        
+
+        &--item {
+            align-self: start;
+        }
+    }
+
+    & hr {
+        width: 20%;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: .9rem;
+    }
+
+    & .fa {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+        margin-top: .5rem;
+        float: left;
+        font-size: 1.7rem;
+
+        @include respond(tab-land){
+            font-size: 1.25rem;
+        }
+    }
+
+    &__social {
+        @include respond(tab-land){
+            display: block;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 500;
+            //padding: .5rem;
+            color: #fff;
+            text-decoration: none;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+            background-size: 240%;
+            transition: all .4s;
+        }
+    
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary-dark;
+            transform: translateX(1rem);
+            padding: .3rem;
+        }
+    }
+}
